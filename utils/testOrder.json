@@ -1,0 +1,26 @@
+{
+    "shippingInfo": {
+      "address": "1 Bangalore",
+      "city": "Bangalore",
+      "phoneNo": "9191919191",
+      "postalCode": "717171",
+      "state": "Karnataka",
+      "country": "India"
+    },
+    "orderItems": [
+      {
+        "name": "Pro Coder Tshirt",
+        "quantity": 1,
+        "image": "https://res.cloudinary.com/dwzps9zgx/image/upload/v1664372676/products/peqxgttlncztd2dsolrz.jpg",
+        "price": 599,
+        "product": "63344fcb5ff25a038caf05ed"
+      }
+    ],
+    "paymentInfo": {
+      "id": "testString"
+    },
+    "taxAmount": 40,
+    "shippingAmount": 10,
+    "totalAmount": 649
+  }
+  
