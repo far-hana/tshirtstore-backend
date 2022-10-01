@@ -17,8 +17,7 @@ const {
 // user routes
 router.route("/products").get(getAllProduct);
 router.route("/product/:id").get(getSingleProductDetails);
-router.route("/review").put(isLoggedIn, addReview);
-router.route("/review").delete(isLoggedIn, deleteReview);
+router.route("/review").put(isLoggedIn, addReview).delete(isLoggedIn, deleteReview);
 router.route("/reviews").get(isLoggedIn, getOnlyReviewsForOneProduct);
 
 
@@ -26,7 +25,6 @@ router.route("/reviews").get(isLoggedIn, getOnlyReviewsForOneProduct);
 router.route("/admin/product/add").post(isLoggedIn, customRole("admin"), addProduct);
 router.route("/admin/products").get(isLoggedIn, customRole("admin"), adminGetAllProduct);
 router.route("/admin/product/:id")
-.get(isLoggedIn, customRole("admin"), getSingleProductDetails)
 .put(isLoggedIn, customRole("admin"), adminUpdateOneProduct)
 .delete(isLoggedIn, customRole("admin"), adminDeleteOneProduct);
 
